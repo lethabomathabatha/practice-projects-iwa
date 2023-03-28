@@ -7,18 +7,20 @@
 is a multi-line
 comment*/
 
-const id = 453523
+const id = 453523;
 
 /**This is the assigned user. The user id is saved in: {@link id} */ 
-const user= 'Lethabo'
+const user= 'Lethabo';
 
 
+console.log (user);
 
+import { hello as helloA } from './code-a.js';
+import { hello as helloB} from './code-b.js';
+console.log (helloA, helloB);
 
-console.log (user)
-
-const MAX_NUMBER = 15
-const MIN_NUMBER = -5
+const MAX_NUMBER = 15;
+const MIN_NUMBER = -5;
 const STEP_AMOUNT = 5; 
 
 
