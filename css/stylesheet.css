@@ -42,7 +42,10 @@ body {
 /* controls */
 
 .controls {
-  background-color: yellow;
+  background-color: var(--color-medium-grey);
+  padding: 3rem;
+  font-size: 1.2rem;
+  border-top: 2px solid #d2d6dc;
 }
 
 /* counter */
