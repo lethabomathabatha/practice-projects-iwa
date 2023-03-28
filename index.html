@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Tally Count Replica</title>
-    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,13 +10,19 @@
     <script src="javascript/scripts.js" defer></script>
     <!-- A script tag loads a JS script for us and runs it. It can
     be called scripts.js, but this is common. Can also be script.js.
-    The defer attribute tells the browser to load the HTML first before running the JS -->
+    The defer attribute tells the browser to load the HTML first before
+    running the JS -->
+
+    <!-- defer downloads, parses, and then only starts running once html is ready.
+    defer will run everything in order -->
+    <!-- async downloads, parses, and runs JS immediately in the background -->
   </head>
 
   <body>
     <header class="header">
       <h1 class="header__title">Tally Count</h1>
     </header>
+
     <noscript>
       <p class="error">Ooops! This web app requires JavaScript to work.</p>
     </noscript>
