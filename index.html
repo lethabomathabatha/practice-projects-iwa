@@ -8,12 +8,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
     <script src="javascript/scripts.js" defer></script>
+    <!-- A script tag loads a JS script for us and runs it. It can
+    be called scripts.js, but this is common. Can also be script.js.
+    The defer attribute tells the browser to load the HTML first before running the JS -->
   </head>
 
   <body>
     <header class="header">
       <h1 class="header__title">Tally Count</h1>
     </header>
+    <noscript>
+      <p class="error">Ooops! This web app requires JavaScript to work.</p>
+    </noscript>
+
 
     <aside class="controls">
       <label>
