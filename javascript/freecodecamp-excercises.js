@@ -81,4 +81,15 @@ const sandwich = ["peanut butter", "jelly", "bread", "knife"];
 console.log (sandwich)
 
 // Nest one Array within Another Array. This is also called a multi-dimensional array.
+const teams = [["Bulls", 23], ["White Sox", 45], "visible"];
+
+console.log (teams) // noticed that I am not accessing the content within the nested arrays
+
+// Access Array Data with Indexes
+// exactly what I needed!
+// Array indexes are written in the same bracket notation that strings use, except that instead of specifying a character, they are specifying an entry in the array.
+const array = [50, 60, 70];
+console.log(array[0]);
+const data = array[1];
+
 
