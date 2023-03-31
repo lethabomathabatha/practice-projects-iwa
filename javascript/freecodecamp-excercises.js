@@ -89,7 +89,30 @@ console.log (teams) // noticed that I am not accessing the content within the ne
 // exactly what I needed!
 // Array indexes are written in the same bracket notation that strings use, except that instead of specifying a character, they are specifying an entry in the array.
 const array = [50, 60, 70];
-console.log(array[0]);
 const data = array[1];
+console.log(array[0]);
 
+// Modify Array Data With Indexes
+const ourArray = [50, 40, 30];
+ourArray[0] = 15;
+
+console.log (ourArray)
+
+// Access Multi-Dimensional Arrays With Indexes
+const arr = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+    [[10, 11, 12], 13, 14]
+  ];
+
+const subarray = arr[3];
+const nestedSubarray = arr[3][0];
+const element = arr[3][0][1];
+
+console.log (subarray);
+console.log (nestedSubarray);
+console.log (element);
+
+// Manipulate Arrays With push Method
 
