@@ -144,3 +144,38 @@ console.log(removedFromOurArray2);
 
 // Manipulate Arrays With unshift Method
 // .unshift() works exactly like .push(), but instead of adding the element at the end of the array, unshift() adds the element at the beginning of the array.
+const ourArray3 = ["Stimpson", "J", "cat"];
+ourArray3.shift();
+ourArray3.unshift("Happy");
+
+console.log(ourArray3)
+
+// Shopping List
+/* Instructions: 
+Create a shopping list in the variable myList. 
+The list should be a multi-dimensional array containing several sub-arrays.
+
+The first element in each sub-array should contain a string with the name of the item. 
+The second element should be a number representing the quantity i.e. 
+["Chocolate Bar", 15]
+
+There should be at least 5 sub-arrays in the list.
+*/
+const myList = [
+    ["Chocolate Bar", 15],
+    ["Potato Chips", 3],
+    ["Apples", 4],
+    ["Bananas", 2],
+    ["Sweet Potatoes", 5],
+    ["Corn", 10]
+  ]
+  
+  console.log(myList[4])
+
+// Write Reusable JavaScript with Functions
+function functionName() {
+    console.log("Hello World");
+    console.log("HeyWorld");
+  }
+  functionName();
+  functionName();
