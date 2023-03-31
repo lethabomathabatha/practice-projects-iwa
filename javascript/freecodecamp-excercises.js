@@ -115,4 +115,32 @@ console.log (nestedSubarray);
 console.log (element);
 
 // Manipulate Arrays With push Method
+const arr1 = [1, 2, 3];
+arr1.push(4);
 
+const arr2 = ["Stimpson", "J", "cat"];
+arr2.push(["happy", "joy"]);
+
+console.log(arr1);
+console.log(arr2);
+
+// Manipulate Arrays With pop Method
+const threeArr = [1, 4, 6];
+const oneDown = threeArr.pop();
+console.log(oneDown);
+console.log(threeArr);
+
+// *how to then use that stored pop value e.g:
+const useArr = 4 + oneDown;
+console.log(useArr)
+
+// Manipulate Arrays With shift Method
+// It works just like .pop(), except it removes the first element instead of the last.
+const ourArray2 = ["Stimpson", "J", ["cat"]];
+const removedFromOurArray2 = ourArray2.shift();
+
+console.log(ourArray2);
+console.log(removedFromOurArray2);
+
+// Manipulate Arrays With unshift Method
+// .unshift() works exactly like .push(), but instead of adding the element at the end of the array, unshift() adds the element at the beginning of the array.
