@@ -271,4 +271,18 @@ const surname = 'Invalid'
 undefined
 typeof [1,2,3]
 'object'
+
+
+"123" == 123
+true
+"123" === 123
+false
+null == undefined
+true
+null === undefined
+false
+true == 1
+true
+true === 1
+false
 */
