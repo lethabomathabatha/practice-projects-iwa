@@ -179,3 +179,43 @@ function functionName() {
   }
   functionName();
   functionName();
+
+// Passing Values to Functions with Arguments
+function testFun(param1, param2) {
+    console.log(param1, param2);
+  }
+
+  testFun('Hi Guys!', 'How are you?');
+  testFun('Trying this again, ', 'it does indeed work.')
+/*  1. Create a function called functionWithArgs that accepts two arguments and 
+    outputs their sum to the dev console.
+    2. Call the function with two numbers as arguments.
+*/
+  function functionWithArgs(arg1, arg2) {
+    console.log(arg1 + arg2);
+  }
+  
+  functionWithArgs(1, 2);
+  functionWithArgs(7,9);
+  
+// Return a Value from a Function with Return
+function plusThree(num) {
+    return num + 3;
+  }
+  
+const answer = plusThree(5);
+
+  console.log(answer)
+
+/* Question:
+    Create a function timesFive that accepts one argument, 
+    multiplies it by 5, and returns the new value.
+*/
+function timesFive(times) {
+    return times * 5;
+  }
+  
+  const product = timesFive(2)
+  console.log(product)
+
+// Global Scope and Functions
