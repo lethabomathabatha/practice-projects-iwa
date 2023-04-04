@@ -1,5 +1,80 @@
 
-function createPassword() {
+const objName = {
+    firstKey: 1,
+    secondKey: true,
+    thirdKey:"Hello",
+}
+
+console.log(objName.firstKey)
+console.log(objName.secondKey)
+console.log(objName.thirdKey)
+
+/*
+const user1 = {
+    name: "Lethabo",
+    surname: "Mathabatha",
+    age: 23,
+}
+
+const user2 = {
+    name: "Lele",
+    surname: "Mathabatha",
+    age: undefined,
+}
+
+
+const user3 = {
+    name: "Thabo",
+    surname: "Mathabatha",
+    age: 4,
+}
+
+console.log(user1.name, user2.name, user3.age)
+
+if(user1.name === "Lethabo" && user2.name === "Lele"){
+    console.log("Mathabatha Family")
+}
+*/
+const families = {
+    Mathabatha: {
+        Lethabo: {
+            name: "Lethabo",
+            surname: "Mathabatha",
+            age: 23,
+        },
+        Lele: {
+            name: "Lele",
+            surname: "Mathabatha",
+            age: undefined,
+        },
+        Thabo: {
+            name: "Thabo",
+            surname: "Mathabatha",
+            age: 4,
+        }
+    }
+} 
+
+console.log(families.Mathabatha.Lethabo.age)
+
+const kids = {
+    Thabo,
+    10: "yo"
+}
+
+
+const data = {
+    languages: {
+        af: "Afrikaans",
+        en: "English",
+    }
+}
+
+
+//Branching Logic
+
+
+/*function createPassword() {
     secretHiddenPassword = '2otb732gh24f0'
     console.log("Your password is: " + secretHiddenPassword)
   }
