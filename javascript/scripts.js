@@ -1,3 +1,62 @@
+const objABC = {
+    name: 'Lele',
+    age: 23,
+    id: 4256378765432,
+}
+
+console.log(objABC)
+
+
+
+
+/**
+ * Hey, this is a tooltip
+ */
+
+
+/**
+ * This is the logged in user
+ */
+const userAB = {
+    /**
+     * The legal name of the user
+     */
+    legalName: 'Lethabo Lele Mathabatha',
+
+    /**
+     * Preferred name of user, not legal
+     */
+    name: 'Lele Mathabatha',
+    
+    /**
+     * RSA ID number of user
+     */
+    id: 00343521 ,
+
+    /**
+     * Indication of logging in atleast once this current year
+     */
+    active: true,
+}
+
+if (userAB.active) {}
+
+
+console.log(valueAB)
+
+const example = document.querySelector('button')
+example.disabled = true
+
+const exampleObj = {
+    go: 100,
+    user: 'Lethabo',
+    doThing: () => console.log('yo')
+}
+
+if (exampleObj.go === 100) {
+    exampleObj.doThing()
+}
+
 
 const objName = {
     firstKey: 1,
