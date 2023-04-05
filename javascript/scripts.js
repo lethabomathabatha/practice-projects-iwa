@@ -65,7 +65,63 @@ const objABC = {
 
 console.log(objABC)
 
+// Math
+/*
+const original = 120
+const discount = 14
 
+const percentage = (original/100) * discount
+console.log(percentage)
+VM1984:5 16.8
+undefined
+const original = 120
+const discount = 14
+
+const percentage = (original/100) * discount
+console.log(`Big Sale! ${Math.round(percentage)}% off!`)
+VM2121:5 Big Sale! 17% off!
+undefined
+const original = 135.60
+const discount = 14.24
+
+const percentage = (original/100) * discount
+console.log(`Big Sale! ${Math.round(percentage.toFixed(2)}% off!`)
+VM2202:5 Uncaught SyntaxError: missing ) after argument list
+const original = 135.60
+const discount = 14.24
+
+const percentage = (original/100) * discount
+console.log(`Big Sale! ${Math.round(percentage.toFixed(2))}% off!`)
+VM2210:5 Big Sale! 19% off!
+undefined
+Math.max(100,90,43, 129, -5)
+129
+Math.min(100,90,43, 129, -5)
+129
+129
+Math.min(100,90,43, 129, -5)
+
+-5
+Math.random()
+0.6646452128096798
+Math.round(Math.random() * 100)
+7
+Math.round(Math.random() * 100)
+92
+Math.round(Math.random() * 100)
+60
+Math.round(Math.random() * 100)
+96
+console.log(Date)
+VM2629:1 ƒ Date() { [native code] }
+undefined
+const instance = new Date()
+console.log(instance)
+VM2743:2 Wed Apr 05 2023 09:40:39 GMT+0200 (South Africa Standard Time)
+
+// look at date-fns, temporal javascript
+
+*/
 
 
 
