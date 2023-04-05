@@ -1,3 +1,62 @@
+// strings, numbers, boolean, null, undefined
+// symbol and bigint to follow later
+
+const first = {
+    name: 'Lethabo'
+}
+const second = {
+    name: 'Lethabo'
+}
+console.log(first.name === second.name)
+// 
+
+let first1 = {
+    name: 'Lethabo'
+}
+let second1 = {
+    name: 'Lethabo'
+}
+console.log(first1 === second1)
+
+// 
+
+let first2 = {
+    name: 'Lethabo'
+}
+console.log(first2.name)
+
+first2.name = 'John'
+console.log(first2.name)
+
+//
+const first3 = {
+    name: 'Lethabo'
+}
+const second3 = first3
+
+second.name = 'John'
+console.log(first3, second3)
+
+// 
+const symbol = Symbol()
+const obj = {
+    [symbol]: 'Hello'
+}
+
+console.log(obj[symbol])
+
+// 
+const first4 = {
+    name: 'Lethabo'
+}
+
+const second4 = first
+second4.name = 'Hello'
+
+console.log(first4.name) // Lethabo
+console.log(second4.name) // Hello
+
+// 
 const objABC = {
     name: 'Lele',
     age: 23,
@@ -5,6 +64,8 @@ const objABC = {
 }
 
 console.log(objABC)
+
+
 
 
 
@@ -31,7 +92,7 @@ const userAB = {
     /**
      * RSA ID number of user
      */
-    id: 00343521 ,
+    id: '00343521' ,
 
     /**
      * Indication of logging in atleast once this current year
