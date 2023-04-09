@@ -245,3 +245,13 @@ function fun2() {
   }
   console.log(output);
 }
+
+
+// Local Scope and Functions
+function myTest() {
+  const loc = "foo";
+  console.log(loc);
+}
+
+myTest(); // this calls the function
+console.log(loc) // an error will be thrown because 'loc' is not defined outside of a function

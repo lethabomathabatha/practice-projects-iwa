@@ -120,7 +120,10 @@ console.log(instance)
 VM2743:2 Wed Apr 05 2023 09:40:39 GMT+0200 (South Africa Standard Time)
 
 // look at date-fns, temporal javascript
-
+// check out unix time
+const instance = new Date ()
+console.log(instance.getTime())
+log: 1680680906698
 */
 
 
