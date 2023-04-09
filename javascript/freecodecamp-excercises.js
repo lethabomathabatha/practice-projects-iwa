@@ -254,4 +254,17 @@ function myTest() {
 }
 
 myTest(); // this calls the function
-console.log(loc) // an error will be thrown because 'loc' is not defined outside of a function
+// console.log(loc) // an error will be thrown because 'loc' is not defined outside of a function
+
+
+// Global vs Local Scope in Functions
+// the local variable takes precedence over the global variable.
+
+const someVar = "Hat";
+
+function myFun() {
+  const someVar = "Head";
+  return someVar;
+}
+
+// console.log(someVar) 
