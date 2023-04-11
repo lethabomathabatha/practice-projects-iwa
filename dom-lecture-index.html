@@ -1,19 +1,75 @@
 <!DOCTYPE html>
+
 <html lang>
   <head>
-    <title>Tally Count Replica</title>
+    <title>DOM Lecture</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
-    <script src="javascript/scripts.js" type="module" defer></script>
+    <script src="javascript/dom-lecture-scripts.js" type="module" defer></script>
   </head>
 
   <body>
-    <header class="header">
+    <div>Example</div>
+    
+    <script>
+      const window = {
+        document: /* html */,
+          head: {
+            // ....
+          },
+          body: {
+            header: {
+              h1: {},
+            },
+            main: {
+              input: {},
+              div: {
+                button: {},
+                button: {}
+              },
+            }
+            
+
+          }
+      }
+
+      window.document.body
+    
+      const button = document.querySelector('.counter__button')
+    
+    </script>
+    
+    <div>
+      <p>1</p>
+      <p>1</p>
+      <p>1</p>
+
+    </div>
+    
+    
+    
+      <header class="header">
       <h1 class="header__title">Tally Count</h1>
     </header>
+
+    <main class="counter">
+      <input class="counter__value" data-key="number" readonly value="0" />
+
+      <div class="counter__actions">
+        <button
+        lethabo="123"
+
+        data-key="subtract"
+        class="counter__button counter__button_first">
+      
+      </button>
+      
+      </div>
+    </main>
+
 
     <noscript>
       <p class="error">Ooops! This web app requires JavaScript to work.</p>
@@ -54,7 +110,7 @@
     <footer class="footer">
       Inspired by <a class="footer__link" href="https://tallycount.app/">Tally Count.</a>
       This is merely a student practice projetc for learning JavaScript.
-    </footer>
+    </footer> 
     
   </body>
 
