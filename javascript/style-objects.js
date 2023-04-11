@@ -1,4 +1,17 @@
-console.log (user);
+const MAX_NUMBER = 15;
+const MIN_NUMBER = -5;
+const STEP_AMOUNT = 5; 
+
+const elements = {
+    number: document.querySelector('[data-key="number"]'),
+    subtract: document.querySelector('[data-key="subtract"]'),
+    add: document.querySelector('[data-key="add"]')
+}
+
+const updateColor = () => {
+    subtract.style.background = 'red'
+    add.style.background = 'red'
+}
 
 import { subtractHandler, addHandler,  } from './handlers.js';
 import { hello as helloA } from './code-a.js';
@@ -7,9 +20,7 @@ console.log (helloA, helloB);
 const subtract = document.querySelector('[data-key="subtract"]')
 const add = document.querySelector('[data-key="add"]')
 
-const updateColor = () => {
-    subtract.style
-}
+
 
 
 const subtractHandler = () => {
