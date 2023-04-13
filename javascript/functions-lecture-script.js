@@ -6,11 +6,9 @@ const number = document.querySelector('[data-key="number"]');
 const subtract = document.querySelector('[data-key="subtract"]');
 const add = document.querySelector('[data-key="add"]');
 
-// const updateColor = () => {
-//     subtract.style.background = 'red';
-//     add.style.background = 'red';
-// };
 
+/*
+// function 1: subtractHandler
 const subtractHandler = () => {
     const newValue = parseInt(number.value) - STEP_AMOUNT;
     number.value = newValue;
@@ -24,6 +22,7 @@ const subtractHandler = () => {
     }
 };
 
+// function 2: addHandler
 const addHandler = () => {
     const newValue = parseInt(number.value) + STEP_AMOUNT;
     number.value = newValue;
@@ -41,10 +40,49 @@ const addHandler = () => {
 
 subtract.addEventListener('click', subtractHandler);
 add.addEventListener('click', addHandler);
+*/
+
+// Functions lecture:
+
+// declaring a function, and calling it
+const example1 = () => {
+    console.log('Hey There')
+    console.log("How're you")
+    console.log('?')
+    // console.log(Math.random)
+}
+
+// example1()
+// example1()
+// example1()
+// example1()
+
+const example2 = example1
+const example3 = example1
+const example4 = example3
+
+example1()
+example2()
+example3()
 
 
 
-// import { subtractHandler, addHandler} from './handlers.js';
-// import { hello as helloA } from './code-a.js';
-// import { hello as helloB} from './code-b.js';
-// console.log (helloA, helloB);
+
+
+
+
+
+/*
+import { subtractHandler, addHandler} from './handlers.js';
+import { hello as helloA } from './code-a.js';
+import { hello as helloB} from './code-b.js';
+console.log (helloA, helloB);
+*/
+
+
+/*
+const updateColor = () => {
+    subtract.style.background = 'red';
+    add.style.background = 'red';
+};
+*/
