@@ -106,6 +106,16 @@ randomCaseLog("Lethabo")
 randomCaseLog("Mathabatha")
 randomCaseLog("26")
 
+const double = (value) => {
+    const result = value * 2
+    return result
+}
+
+console.log(double(15))
+console.log(randomCaseLog("Mathabatha"))
+
+
+
 
 
 
