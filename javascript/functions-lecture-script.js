@@ -49,7 +49,7 @@ const example1 = () => {
     console.log('Hey There')
     console.log("How're you")
     console.log('?')
-    // console.log(Math.random)
+    console.log(Math.random)
 }
 
 // example1()
@@ -65,6 +65,46 @@ example1()
 example2()
 example3()
 
+const customLog = () => {
+    const text = "Hello world"
+    const upperText = text.toUpperCase()
+    console.log(upperText)
+}
+
+customLog()
+customLog()
+
+
+// you can assign the function 'text' when you call it to console
+const upperCaseLog = (text) => {
+    const upperText = text.toUpperCase()
+    console.log(upperText)
+}
+
+upperCaseLog("Lethabo")
+upperCaseLog("Mathabatha")
+
+
+// 
+
+/**
+ * Logs a string to the console. The value passed will
+ * be randomly converted to uppercase or lowercase!
+ * @param {string} text
+ */
+
+
+// you can assign the function 'text' when you call it to console
+const randomCaseLog = (text) => {
+    const isUpperCase = Math.random() >= 0.5
+    const method = isUpperCase ? 'toUpperCase' : 'toLowerCase'
+    const result = text[method]()
+    console.log(result)
+}
+
+randomCaseLog("Lethabo")
+randomCaseLog("Mathabatha")
+randomCaseLog("26")
 
 
 
