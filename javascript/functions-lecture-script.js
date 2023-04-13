@@ -90,7 +90,7 @@ upperCaseLog("Mathabatha")
 /**
  * Logs a string to the console. The value passed will
  * be randomly converted to uppercase or lowercase!
- * @param {string} text
+ * @param {string} text - The text value to transform
  */
 
 
@@ -102,10 +102,42 @@ const randomCaseLog = (text) => {
     console.log(result)
 }
 
-randomCaseLog("Lethabo")
-randomCaseLog("Mathabatha")
-randomCaseLog("26")
+parseInt('sfrgd')
 
+console.log(randomCaseLog("Lethabo"))
+console.log(randomCaseLog("Mathabatha"))
+console.log(randomCaseLog("26"))
+
+
+
+
+/**
+ * @param {"uppercase"|"lowercase"} [format="uppercase"] - how to transform
+ * the case. If no value is provided then one will be selected randomly.
+ */
+
+
+const changeCase = (text, format) => {
+    const formatMap = {
+        random: Math.random() >= 0.5 ? 'toUpperCase' : 'toLowerCase'
+        uppercase:'toUppercase',
+        lowercase:'lowercase',
+    }
+    const method 
+    const method = method ? formatMap[method] : ()
+
+    const isUpper = Math.random() >= 0.5
+    const method = isUpper ? 'toUpperCase' : 'toLowerCase'
+    return text[method]()
+}
+
+
+console.log(changeCase("Lethabo"))
+console.log(changeCase("Mathabatha"))
+console.log(changeCase("26"))
+
+
+//
 const double = (value) => {
     const result = value * 2
     return result
@@ -113,6 +145,8 @@ const double = (value) => {
 
 console.log(double(15))
 console.log(randomCaseLog("Mathabatha"))
+
+
 
 
 
@@ -136,3 +170,26 @@ const updateColor = () => {
     add.style.background = 'red';
 };
 */
+
+
+// /**
+//  * @param {string} text
+//  * @param {"uppercase"|"lowercase"} [format="uppercase"]
+//  * @returns {string}
+//  */
+
+// const changeCase = (text, format) => {
+//     const formatMap = {
+//         random: Math.random() >= 0.5 ? 'toUpperCase' : 'toLowerCase'
+//         uppercase:'toUppercase',
+//         lowercase:'lowercase',
+//     }
+
+//     const key = format || 'random'
+//     const method = formatMap[key]
+//     return text[method]()
+// }
+
+// console.log(changeCase("Lethabo"))
+// console.log(changeCase("Mathabatha"))
+// console.log(changeCase("26"))
