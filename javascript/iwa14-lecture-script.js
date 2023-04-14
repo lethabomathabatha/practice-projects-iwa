@@ -91,3 +91,18 @@ console.log(counter1.value)
 counter1.add()
 console.log(counter1.value)
 
+
+// Recursion
+
+const example5 = (value5) => {
+    const innerValue5 = value5 + 1
+
+    if (value5 < 20) {
+        return example5(innerValue5)
+    } else {
+        return innerValue5
+    }
+}
+
+const result = example5(1)
+console.log(result)
