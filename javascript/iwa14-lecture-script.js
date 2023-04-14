@@ -94,15 +94,22 @@ console.log(counter1.value)
 
 // Recursion
 
+// define a recursive function called "example5" that takes one parameter called "value5"
 const example5 = (value5) => {
-    const innerValue5 = value5 + 1
+    const innerValue5 = value5 + 1 // create a new variable "innerValue5" that's the value of "value5" plus one
 
+ // if "value5" is less than 20, call "example5" recursively with "innerValue5" as the argument
     if (value5 < 20) {
         return example5(innerValue5)
     } else {
+         // otherwise, return the value of "innerValue5"
         return innerValue5
     }
 }
 
+
+// call "example5" with an initial value of 1 and store the result in a variable called "result"
 const result = example5(1)
+
+// output the value of "result" to the console
 console.log(result)
