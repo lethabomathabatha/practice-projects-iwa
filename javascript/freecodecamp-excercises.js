@@ -298,3 +298,30 @@ function addFive () {
 
 addThree();
 addFive();
+
+
+// Understanding Undefined Value returned from a Function
+let sum2 = 0;
+
+function addSum(num2) {
+  sum2 = sum2 + num2;
+}
+
+addSum(3);
+
+// Setup
+let sum3 = 0;
+
+function addThree() {
+  sum3 = sum3 + 3;
+}
+
+// Only change code below this line
+function addFive () {
+  sum3 = sum3 + 5;
+}
+
+// Only change code above this line
+
+addThree();
+addFive();
