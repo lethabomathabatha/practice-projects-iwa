@@ -20,6 +20,27 @@ example.addEventListener(
         example.disabled = true;
     });
 
+    
+    example.addEventListener(
+        'click', // this is the event type
+        // when clicked, the code inside this arrow function will run
+        () => { 
+            console.log('Clicked Again.')  // the inner text of the element with id example will be changed to 'Clicked.'
+            example.disabled = true;
+        });
+
+
+document
+    .querySelector('#example')
+    .addEventListener('click', () => {
+        console.log('another click')
+    })
+
+// Logging a mouse scroll event:
+window.addEventListener('scroll', () => {
+    console.log('scrolled!')
+
+})
 
 
 // To return different colors when the button is clicked:
