@@ -1604,5 +1604,120 @@ const createPerson = (name, age, gender) => {
   return ({ name, age, gender })
  };
 
- // Write Concise Declarative Functions with ES6
+// Write Concise Declarative Functions with ES6
+//  Refactor the function setGear inside the object bicycle to use the shorthand syntax described above.
+// Only change code below this line
+const bicycle = {
+  gear: 2,
+  setGear(newGear) {
+    this.gear = newGear;
+  }
+};
+// Only change code above this line
+bicycle.setGear(3);
+console.log(bicycle.gear);
+
+// Use class Syntax to Define a Constructor Function
+// Use the class keyword and write a constructor to create the Vegetable class.
+// The Vegetable class allows you to create a vegetable object with a property name that gets passed to the constructor.
+
+// Only change code below this line
+// Only change code below this line
+class Vegetable {
+  constructor(name) {
+    this.name = name;
+}
+}
+// Only change code above this line
+
+const carrot = new Vegetable('carrot');
+console.log(carrot.name); // Should display 'carrot'
+
+// Use getters and setters to Control Access to an Object
+/*
+Use the class keyword to create a Thermostat class. The constructor accepts a Fahrenheit temperature.
+
+In the class, create a getter to obtain the temperature in Celsius and a setter to set the temperature in Celsius.
+
+Remember that C = 5/9 * (F - 32) and F = C * 9.0 / 5 + 32, where F is the value of temperature in Fahrenheit, and C is the value of the same temperature in Celsius.
+*/
+
+// Only change code below this line
+class Thermostat {
+  constructor(fahrenheit) {
+    this.fahrenheit = fahrenheit;
+  }
+  get temperature() {
+    return 5/9 * (this.fahrenheit - 32);
+  }
+  set temperature(celsius) {
+    this.fahrenheit = celsius * 9.0 / 5 + 32;
+  }
+}
+
+// Only change code above this line
+
+const thermos = new Thermostat(76); // Setting in Fahrenheit scale
+let temp = thermos.temperature; // 24.44 in Celsius
+thermos.temperature = 26;
+temp = thermos.temperature; // 26 in Celsius
+
+
+// Create a Module Script
+// Add a script to the HTML document of type module and give it the source file of index.js
+/*
+<html>
+  <script type="module" src="index.js"></script>
+
+  <body>
+    <!-- Only change code below this line -->
+
+    <!-- Only change code above this line -->
+  </body>
+</html>
+*/
+
+// Use export to Share a Code Block
+// There are two string-related functions in the editor. Export both of them using the method of your choice.
+const uppercaseString = (string) => {
+  return string.toUpperCase();
+}
+
+const lowercaseString = (string) => {
+  return string.toLowerCase()
+}
+
+export { uppercaseString, lowercaseString}
+
+// Reuse JavaScript Code Using import
+// Add the appropriate import statement that will allow the current file to use the uppercaseString and lowercaseString 
+// functions you exported in the previous lesson. These functions are in a file called string_functions.js, which is in the same directory as the current file.
+
+import { uppercaseString, lowercaseString } from './string_functions.js'
+// Only change code above this line
+
+uppercaseString("hello");
+lowercaseString("WORLD!");
+
+// Use * to Import Everything from a File#
+// The object will contain all of the exports
+
+// The code in this file requires the contents of the file: string_functions.js, that is in the same directory as the 
+// current file. Use the import * as syntax to import everything from the file into an object called stringFunctions.
+import * as stringFunctions from './string_functions.js';
+// Only change code above this line
+
+stringFunctions.uppercaseString("hello");
+stringFunctions.lowercaseString("WORLD!");
+
+// Create an Export Fallback with export default
+// you cannot use export default with var, let, or const
+
+// The following function should be the fallback value for the module. Please add the necessary code to do so.
+export default function subtract(x, y) {
+  return x - y;
+}
+
+// Import a Default Export
+
 
