@@ -1429,4 +1429,180 @@ function editInPlace() {
 editInPlace();
 
 // Prevent Object Mutation
+function freezeObj() {
+  const MATH_CONSTANTS = {
+    PI: 3.14
+  };
+  // Only change code below this line
+Object.freeze(MATH_CONSTANTS)
+
+  // Only change code above this line
+  try {
+    MATH_CONSTANTS.PI = 99;
+  } catch(ex) {
+    console.log(ex);
+  }
+  return MATH_CONSTANTS.PI;
+}
+const PI = freezeObj();
+
+// Use Arrow Functions to Write Concise Anonymous Functions
+const magic = () => new Date;
+
+// Write Arrow Functions with Parameters
+// Rewrite the myConcat function which appends contents of arr2 to arr1 so that the function uses arrow function syntax.
+const myConcat = (arr1, arr2) => arr1.concat(arr2);
+
+console.log(myConcat([1, 2], [3, 4, 5]));
+
+// Set Default Parameters for Your Functions
+// Modify the function increment by adding default parameters so that it will add 1 to number if value is not specified.
+// Only change code below this line
+const increment = (number, value = 1) => number + value;
+// Only change code above this line
+
+// Use the Rest Parameter with Function Parameters
+// Modify the function sum using the rest parameter in such a way that the function sum is able to take any number of arguments
+// and return their sum.
+
+const sum = (...args) => {
+  // const args = [x, y, z];
+
+  let total = 0;
+  for (let i = 0; i < args.length; i++) {
+    total += args[i];
+  }
+  return total;
+}
+
+// Use the Spread Operator to Evaluate Arrays In-Place
+// allows us to expand arrays and other expressions in places where multiple parameters or elements are expected.
+
+// Copy all contents of arr3 into another array arr4 using the spread operator.
+const arr3 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+let arr4;
+
+arr4 = [...arr3];  // Change this line
+
+console.log(arr4);
+
+// Use Destructuring Assignment to Extract Values from Objects
+/*Replace the two assignments with an equivalent destructuring assignment. It should still assign the 
+  variables today and tomorrow the values of today and tomorrow from the HIGH_TEMPERATURES object.
+*/
+const HIGH_TEMPERATURES = {
+  yesterday: 75,
+  today: 77,
+  tomorrow: 80
+};
+
+// Only change code below this line
+
+const {today} = HIGH_TEMPERATURES;
+const {tomorrow} = HIGH_TEMPERATURES;
+
+// Use Destructuring Assignment to Assign Variables from Objects
+/* Replace the two assignments with an equivalent destructuring assignment. It should still assign the variables
+  highToday and highTomorrow the values of today and tomorrow from the HIGH_TEMPERATURES object.
+*/
+
+const HIGH_TEMPERATURES = {
+  yesterday: 75,
+  today: 77,
+  tomorrow: 80
+};
+
+// Only change code below this line
+  
+const { today: highToday } = HIGH_TEMPERATURES
+const { tomorrow: highTomorrow } = HIGH_TEMPERATURES
+
+// Use Destructuring Assignment to Assign Variables from Nested Objects
+/*Replace the two assignments with an equivalent destructuring assignment. It should still assign the 
+  variables lowToday and highToday the values of today.low and today.high from the LOCAL_FORECAST object.
+*/
+const LOCAL_FORECAST = {
+  yesterday: { low: 61, high: 75 },
+  today: { low: 64, high: 77 },
+  tomorrow: { low: 68, high: 80 }
+};
+
+// Only change code below this line
+  
+const { today: {low: lowToday }} = LOCAL_FORECAST;
+const { today: {high : highToday1 }} = LOCAL_FORECAST;
+
+// Use Destructuring Assignment to Assign Variables from Arrays
+// Use destructuring assignment to swap the values of a and b so that a receives the value stored in b, and b receives the value stored in a.
+
+let a = 8, b = 6;
+// Only change code below this line
+[a, b] = [b, a];
+
+// Destrucuring Assignment with the Rest Operator to Reassign Array Elements
+/*Use a destructuring assignment with the rest syntax to emulate the behavior of Array.prototype.slice(). 
+  removeFirstTwo() should return a sub-array of the original array list with the first two elements omitted.
+*/
+
+function removeFirstTwo(list) {
+  // Only change code below this line
+  const [a, b, ...shorterList] = list ; // Change this line
+  // Only change code above this line
+  return shorterList;
+}
+
+const source = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const sourceWithoutFirstTwo = removeFirstTwo(source);
+
+// Use Destructuring Assignment to Pass an Object as a Function's Parameters
+// Use destructuring assignment within the argument to the function half to send only max and min inside the function.
+
+const stats = {
+  max: 56.78,
+  standard_deviation: 4.34,
+  median: 34.54,
+  mode: 23.87,
+  min: -0.75,
+  average: 35.85
+}
+
+// Only change code below this line
+const half = ({max, min}) => (max + min) / 2.0;
+
+// Create Strings using Template Literals
+/*
+  Use template literal syntax with backticks to create an array of list element (li) strings. Each list element's text should be one of the array elements from the failure property on the result object and have a class attribute with the value text-warning. The makeList function should return the array of list item strings.
+
+  Use an iterator method (any kind of loop) to get the desired output (shown below).
+
+  [
+    '<li class="text-warning">no-var</li>',
+    '<li class="text-warning">var-on-top</li>',
+    '<li class="text-warning">linebreak</li>'
+  ]
+*/
+
+const result = {
+  success: ["max-length", "no-amd", "prefer-arrow-functions"],
+  failure: ["no-var", "var-on-top", "linebreak"],
+  skipped: ["no-extra-semi", "no-dup-keys"]
+};
+function makeList(arr) {
+  // Only change code below this line
+
+  const failureItems = arr.map(item => `<li class="text-warning">${item}</li>`);
+  // Only change code above this line
+  return failureItems;
+}
+
+const failuresList = makeList(result.failure);
+
+// Write Concise Object Literal Declarations Using Object Property Shorthand
+// Use object property shorthand with object literals to create and return an object with name, age and gender properties.
+const createPerson = (name, age, gender) => {
+  // Only change code below this line
+  return ({ name, age, gender })
+ };
+
+ // Write Concise Declarative Functions with ES6
 
