@@ -1719,5 +1719,92 @@ export default function subtract(x, y) {
 }
 
 // Import a Default Export
+//  You can use any name when importing a default.
+
+// In the following code, import the default export from the math_functions.js file, found in the same directory as this file. Give the import the name subtract.
+import subtract from './math_functions.js'
+// Only change code above this line
+
+subtract(7,4);
+
+// Create a JavaScript Promise
+//  It takes a function, as its argument, with two parameters - resolve and reject.
+
+// Create a new promise called makeServerRequest. Pass in a function with resolve and reject parameters to the constructor.
+const makeServerRequest = new Promise((resolve, reject) => {
+  
+})
+
+// Complete a Promise with resolve and reject
+
+// Make the promise handle success and failure. If responseFromServer is true, call the resolve method to 
+// successfully complete the promise. Pass resolve a string with the value We got the data. If responseFromServer is false, 
+// use the reject method instead and pass it the string: Data not received.
+
+const makeServerRequest1 = new Promise((resolve, reject) => {
+  // responseFromServer represents a response from a server
+  let responseFromServer;
+    
+  if(responseFromServer) {
+    resolve("We got the data") // Change this line
+  } else {  
+    reject("Data not received")// Change this line
+  }
+});
+
+
+// Handle a Fulfilled Promise with then
+// Add the then method to your promise. Use result as the parameter of its callback function and log result to the console.
+// result comes from the argument given to the resolve method.
+
+const makeServerRequest2 = new Promise((resolve, reject) => {
+  // responseFromServer is set to true to represent a successful response from a server
+  let responseFromServer = true;
+    
+  if(responseFromServer) {
+    resolve("We got the data");
+  } else {  
+    reject("Data not received");
+  }
+});
+
+makeServerRequest2.then(result => {
+  console.log(result)
+})
+
+// Handle a Rejected Promise with catch
+// catch is the method used when your promise has been rejected.
+// error is the argument passed in to the reject method.
+
+// Add the catch method to your promise. Use error as the parameter of its callback function and log error to the console.
+const makeServerRequest3 = new Promise((resolve, reject) => {
+  // responseFromServer is set to false to represent an unsuccessful response from a server
+  let responseFromServer = false;
+    
+  if(responseFromServer) {
+    resolve("We got the data");
+  } else {  
+    reject("Data not received");
+  }
+});
+
+makeServerRequest3.then(result => {
+  console.log(result);
+});
+
+makeServerRequest3.catch(error => {
+  console.log(error);
+});
+
+// Using the Test Method
+// Apply the regex myRegex on the string myString using the .test() method.
+
+let myString = `Hello, World!`;
+let myRegex = /Hello/;
+let result1 = myRegex.test(myString); // Change this line
+console.log(result1)
+
+
+
 
 
