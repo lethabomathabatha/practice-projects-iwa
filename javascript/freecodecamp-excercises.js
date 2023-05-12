@@ -1796,6 +1796,10 @@ makeServerRequest3.catch(error => {
   console.log(error);
 });
 
+
+
+// REGULAR EXPRESSIONS
+
 // Using the Test Method
 // Apply the regex myRegex on the string myString using the .test() method.
 
@@ -1805,6 +1809,5 @@ let result1 = myRegex.test(myString); // Change this line
 console.log(result1)
 
 
-
-
+// Match Literal Strings
 
