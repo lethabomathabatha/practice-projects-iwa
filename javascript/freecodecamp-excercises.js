@@ -1979,4 +1979,75 @@ let username = "JackOfAllTrades";
 let userCheck = /^[a-z]([0-9]{2,}|[a-z]+\d*)$/i; // Change this line
 
 // Match Whitespace
+// Change the regex countWhiteSpace to look for multiple whitespace characters in a string.
+let sample = "Whitespace is important in separating words";
+let countWhiteSpace = /\s/g; // Change this line
+let result21 = sample.match(countWhiteSpace);
+
+// Match Non-Whitespace Characters
+// Change the regex countNonWhiteSpace to look for multiple non-whitespace characters in a string.
+let sample1 = "Whitespace is important in separating words";
+let countNonWhiteSpace = /\S/g; // Change this line
+let result22 = sample1.match(countNonWhiteSpace);
+
+// Specify Upper and Lower Number of Matches
+// You can specify the lower and upper number of patterns with quantity specifiers. Quantity specifiers are used with curly brackets ({ and }).
+
+// Change the regex ohRegex to match only 3 to 6 letter h's in the word "Oh no".
+let ohStr = "Ohhh no";
+let ohRegex = /Oh{3,6}\sno/; // Change this line
+let result23 = ohRegex.test(ohStr);
+
+// Specify Only the Lower Number of Matches
+// To only specify the lower number of patterns, keep the first number followed by a comma.
+
+// Change the regex haRegex to match the word "Hazzah" only when it has four or more letter z's.
+let haStr = "Hazzzzah";
+let haRegex = /Haz{4,}ah/; // Change this line
+let result24 = haRegex.test(haStr);
+
+// Specify Exact Number of Matches
+// Change the regex timRegex to match the word "Timber" only when it has four letter m's.
+let timStr = "Timmmmber";
+let timRegex = /Tim{4}ber/; // Change this line
+let result25 = timRegex.test(timStr);
+
+// Check for All or None
+// This checks for zero or one of the preceding element. You can think of this symbol as saying the previous element is optional.
+
+// Change the regex favRegex to match both the American English (favorite) and the British English (favourite) version of the word.
+let favWord = "favorite";
+let favRegex = /favou?rite/; // Change this line
+let result26 = favRegex.test(favWord);
+
+// Positive and Negative Lookahead
+// A positive lookahead will look to make sure the element in the search pattern is there, but won't actually match it. A positive lookahead is used as (?=...) where the ... is the required part that is not matched.
+// a negative lookahead will look to make sure the element in the search pattern is not there. A negative lookahead is used as (?!...) where the ... is the pattern that you do not want to be there. 
+
+// Use lookaheads in the pwRegex to match passwords that are greater than 5 characters long, do not begin with numbers, and have two consecutive digits.
+let sampleWord = "astronaut";
+let pwRegex = /(?=\w{6,})(?=\D*\d{2})/; // Change this line
+let result27 = pwRegex.test(sampleWord);
+
+// Check For Mixed Grouping of Characters
+/*
+  Fix the regex so that it checks for the names of Franklin Roosevelt or Eleanor Roosevelt in a case sensitive manner and 
+  it should make concessions for middle names.
+
+  Then fix the code so that the regex that you have created is checked against myString and either true or false is returned 
+  depending on whether the regex matches.
+*/
+
+let myString3 = "Eleanor Roosevelt";
+let myRegex5 = /(Franklin|Eleanor).*Roosevelt/; // Change this line
+let result28 = myRegex5.test(myString3); // Change this line
+
+let myString4 = "Eleanor Roosevelt";
+let myRegex6 = /(Franklin ([A-Z]\. )?|Eleanor ([A-Z]\. )?)Roosevelt/; // Change this line
+let result29 = true
+result = myRegex6.test(myString4); // Change this line
+console.log(result29);
+
+// Reuse Patterns Using Capture Groups
+
 
