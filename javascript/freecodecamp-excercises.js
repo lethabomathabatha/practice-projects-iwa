@@ -1890,3 +1890,93 @@ let difficultSpelling = "Mississippi";
 let myRegex3 = /s+/g; // Change this line
 let result12 = difficultSpelling.match(myRegex3);
 
+// Match Characters that Occur Zero or More Times
+
+/*
+  For this challenge, chewieQuote has been initialized as the string Aaaaaaaaaaaaaaaarrrgh! behind the scenes. 
+  Create a regex chewieRegex that uses the * character to match an uppercase A character immediately followed by zero or more 
+  lowercase a characters in chewieQuote. Your regex does not need flags or character classes, and it should not match any of 
+  the other quotes.
+*/
+// Only change code below this line
+let chewieRegex = /Aa*/; // Change this line
+// Only change code above this line
+
+let result13 = chewieQuote.match(chewieRegex);
+
+// Find Characters with Lazy Matching
+// finds the smallest possible part of the string that satisfies the regex pattern.
+/* Fix the regex /<.*>/ to return the HTML tag <h1> and not the text "<h1>Winter is coming</h1>". 
+  Remember the wildcard . in a regular expression matches any character.*/ 
+
+let text = "<h1>Winter is coming</h1>";
+let myRegex4 = /<.*?>/; // Change this line
+let result14 = text.match(myRegex4);
+
+// Find One or More Criminals in a Hunt
+// Write a greedy regex that finds one or more criminals within a group of other people.
+
+let reCriminals = /C+/; // Change this line
+
+// Match Beginning String Patterns
+// Use the caret character in a regex to find Cal only in the beginning of the string rickyAndCal.
+let rickyAndCal = "Cal and Ricky both like racing.";
+let calRegex = /^Cal/; // Change this line
+let result15 = calRegex.test(rickyAndCal);
+
+// Match Ending String Patterns
+// Use the anchor character ($) to match the string caboose at the end of the string caboose.
+let caboose = "The last car on a train is the caboose";
+let lastRegex = /caboose$/; // Change this line
+let result16 = lastRegex.test(caboose);
+
+// Match All Letters and Numbers
+// use the shorthand character class \w to count the number of alphanumeric characters in various quotes and strings.
+let quoteSample4 = "The five boxing wizards jump quickly.";
+let alphabetRegexV2 = /\w/g; // Change this line
+let result17 = quoteSample4.match(alphabetRegexV2).length;
+
+// Match Everything But Letters and Numbers
+// the opposite pattern uses a capital letter. This shortcut is the same as [^A-Za-z0-9_].
+let quoteSample5 = "The five boxing wizards jump quickly.";
+let nonAlphabetRegex = /\W/g; // Change this line
+let result18 = quoteSample5.match(nonAlphabetRegex).length;
+
+// Match All Numbers
+// \d is the same as the character class [0-9], which looks for a single character of any number between zero and nine.
+
+// Use the shorthand character class \d to count how many digits are in movie titles. Written out numbers ("six" instead of 6) do not count.
+let movieName = "2001: A Space Odyssey";
+let numRegex = /\d/g; // Change this line
+let result19 = movieName.match(numRegex).length;
+
+// Match All Non-Numbers
+// The shortcut to look for non-digit characters is \D. This is equal to the character class [^0-9], which looks for a single character
+
+// Use the shorthand character class for non-digits \D to count how many non-digits are in movie titles.
+let movieName1 = "2001: A Space Odyssey";
+let noNumRegex = /\D/g; // Change this line
+let result20 = movieName1.match(noNumRegex).length;
+
+// Restrict Possible Usernames
+/*
+  Usernames are used everywhere on the internet. They are what give users a unique identity on their favorite sites.
+
+  You need to check all the usernames in a database. Here are some simple rules that users have to follow when creating their username.
+
+  * Usernames can only use alpha-numeric characters.
+
+  * The only numbers in the username have to be at the end. There can be zero or more of them at the end. Username cannot start with the number.
+
+  * Username letters can be lowercase and uppercase.
+
+  * Usernames have to be at least two characters long. A two-character username can only use alphabet letters as characters.
+
+  Change the regex userCheck to fit the constraints listed above.
+*/
+
+let username = "JackOfAllTrades";
+let userCheck = /^[a-z]([0-9]{2,}|[a-z]+\d*)$/i; // Change this line
+
+// Match Whitespace
+
