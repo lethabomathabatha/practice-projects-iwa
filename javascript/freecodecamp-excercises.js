@@ -1810,4 +1810,83 @@ console.log(result1)
 
 
 // Match Literal Strings
+// Complete the regex waldoRegex to find "Waldo" in the string waldoIsHiding with a literal match.
+let waldoIsHiding = "Somewhere Waldo is hiding in this text.";
+let waldoRegex = /Waldo/; // Change this line
+let result2 = waldoRegex.test(waldoIsHiding);
+
+// Match a Literal String with Different Possibilities
+// Complete the regex petRegex to match the pets dog, cat, bird, or fish.
+let petString = "James has a pet cat.";
+let petRegex = /dog|cat|bird|fish/; // Change this line
+let result3 = petRegex.test(petString);
+
+// Ignore Case While Matching
+// Write a regex fccRegex to match freeCodeCamp, no matter its case. Your regex should not match any abbreviations 
+// or variations with spaces.
+
+let myString1 = "freeCodeCamp";
+let fccRegex = /freeCodeCamp/i; // Change this line
+let result4 = fccRegex.test(myString1);
+
+// Extract Matches
+// Apply the .match() method to extract the string coding.
+let extractStr = "Extract the word 'coding' from this string.";
+let codingRegex = /coding/; // Change this line
+let result5 = extractStr.match(codingRegex); // Change this line
+
+// Find More Than the First Match
+// To search or extract a pattern more than once, you can use the global search flag: g.
+
+// Using the regex starRegex, find and extract both Twinkle words from the string twinkleStar. You can have multiple flags on your regex like /search/gi
+let twinkleStar = "Twinkle, twinkle, little star";
+let starRegex = /twinkle/gi; // Change this line
+let result6 = twinkleStar.match(starRegex); // Change this line
+
+// Match Anything with Wildcard Period
+// The wildcard character . will match any one character. 
+// Complete the regex unRegex so that it matches the strings run, sun, fun, pun, nun, and bun. Your regex should use the wildcard character.
+let exampleStr = "Let's have fun with regular expressions!";
+let unRegex = /un./; // Change this line
+let result7 = unRegex.test(exampleStr);
+
+// Match Single Character with Multiple Possibilities
+// You can search for a literal pattern with some flexibility with character classes
+// For example, you want to match bag, big, and bug but not bog. You can create the regex /b[aiu]g/ to do this. 
+// The [aiu] is the character class that will only match the characters a, i, or u.
+
+// Use a character class with vowels (a, e, i, o, u) in your regex vowelRegex to find all the vowels in the string quoteSample. 
+let quoteSample = "Beware of bugs in the above code; I have only proved it correct, not tried it.";
+let vowelRegex = /[aeiou]/gi; // Change this line
+let result8 = quoteSample.match(vowelRegex); // Change this line
+
+// Match Letters of the Alphabet
+// Inside a character set, you can define a range of characters to match using a hyphen character: -.
+
+// Match all the letters in the string quoteSample. Note: Be sure to match both uppercase and lowercase letters.
+let quoteSample1 = "The quick brown fox jumps over the lazy dog.";
+let alphabetRegex = /[a-z]/gi; // Change this line
+let result9 = quoteSample.match(alphabetRegex); // Change this line
+
+// Match Numbers and Letters of the Alphabet
+// Create a single regex that matches a range of letters between h and s, and a range of numbers between 2 and 6. Remember to include the appropriate flags in the regex.
+let quoteSample2 = "Blueberry 3.141592653s are delicious.";
+let myRegex1 = /[h-s2-6]/gi; // Change this line
+let result10 = quoteSample.match(myRegex1); // Change this line
+
+// Match Single Characters Not Specified
+// you could also create a set of characters that you do not want to match. These types of character sets are called negated character sets.
+
+// Create a single regex that matches all characters that are not a number or a vowel. Remember to include the appropriate flags in the regex.
+let quoteSample3 = "3 blind mice.";
+let myRegex2 = /[^aeiou0-9]/gi; // Change this line
+let result11 = quoteSample.match(myRegex2); // Change this line
+
+// Match Characters that Occur One or More Times
+// For example, /a+/g would find one match in abc and return ["a"]. Because of the +, it would also find a single match in aabc and return ["aa"].
+
+// You want to find matches when the letter s occurs one or more times in Mississippi. Write a regex that uses the + sign.
+let difficultSpelling = "Mississippi";
+let myRegex3 = /s+/g; // Change this line
+let result12 = difficultSpelling.match(myRegex3);
 
