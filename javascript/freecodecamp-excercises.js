@@ -2075,3 +2075,76 @@ result = repeatNum.match(reRegex)
 let hello = "   Hello, World!  ";
 let wsRegex = /^\s+|\s+$/g; // Change this line
 let result32 = hello.replace(wsRegex, ""); // Change this line
+
+
+// DEBUGGING
+// Use the JavaScript Console to Check the Value of a Variable
+// use console.log() to print the value of a variable to the console.
+let a1 = 5;
+let b1 = 1;
+a1++;
+// Only change code below this line
+
+console.log(a1)
+let sumAB = a1 + b1;
+console.log(sumAB);
+
+// Understanding the Differences between the freeCodeCamp and Browser Console
+let output = "Get this to show once in the freeCodeCamp console and not at all in the browser console";
+console.log(output)
+console.clear()
+
+// Use typeof to Check the Type of a Variable
+// add two console.log() statements to check the typeof each of the two variables seven and three in the code.
+let seven = 7;
+let three = "3";
+console.log(seven + three);
+// Only change code below this line
+
+console.log(typeof seven)
+console.log(typeof three)
+
+// Catch Misspelled Variable and Function Names
+// fix the two spelling errors in the code so the netWorkingCapital calculation works.
+let receivables = 10;
+let payables = 8;
+let netWorkingCapital = receivables - payables;
+console.log(`Net working capital is: ${netWorkingCapital}`);
+
+// Catch Unclosed Parentheses, Brackets, Braces and Quotes
+// fix the two pair errors in the code.
+let myArray4 = [1, 2, 3];
+let arraySum = myArray4.reduce((previous, current) =>  previous + current);
+console.log(`Sum of array values is: ${arraySum}`);
+
+// Catch Mixed Usage of Single and Double Quotes
+// fix the string so it either uses different quotes for the href value, or escape the existing ones. Keep the double quote marks around the entire string.
+let innerHtml = "<p>Click here to <a href='#Home'>return home</a></p>";
+console.log(innerHtml);
+
+// Catch Use of Assignment Operator Instead of Equality Operator
+// fix the condition so the program runs the right branch, and the appropriate value is assigned to result.
+let x = 7;
+let y = 9;
+let result33 = "to come";
+
+if(x === y) {
+  result33 = "Equal!";
+} else {
+  result33 = "Not equal!";
+}
+
+console.log(result33);
+
+// Catch Missing Open and Closing Parenthesis After a Function Call
+// fix the code so the variable result is set to the value returned from calling the function getNine.
+function getNine() {
+  let x = 6;
+  let y = 3;
+  return x + y;
+}
+
+let result34 = getNine();
+console.log(result34);
+
+
