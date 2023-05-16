@@ -2285,6 +2285,68 @@ arr.splice(0,2, 'DarkSalmon', 'BlanchedAlmond')
 
 console.log(htmlColorNames(['DarkGoldenRod', 'WhiteSmoke', 'LavenderBlush', 'PaleTurquoise', 'FireBrick']));
 
+// Copy Array Items Using slice()
+// slice() copies or extracts a given number of elements to a new array, leaving the array it is called upon untouched.
+// slice() takes only 2 parameters — the first is the index at which to begin extraction, and the second is the index at which to stop extraction
+/* We have defined a function, forecast, that takes an array as an argument. Modify the function using slice() to extract 
+information from the argument array and return a new array that contains the string elements warm and sunny. */
+function forecast(arr) {
+  // Only change code below this line
+  let newArr = arr.slice(2,4)
+  return newArr;
+}
 
+// Only change code above this line
+console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
+
+// Copy an Array with the Spread Operator
+/*
+  We have defined a function, copyMachine which takes arr (an array) and num (a number) as arguments. The function is supposed to 
+  return a new array made up of num copies of arr. We have done most of the work for you, but it doesn't work quite right yet. 
+  Modify the function using spread syntax so that it works correctly (hint: another method we have already covered might come in handy here!). 
+*/
+function copyMachine(arr, num) {
+  let newArr = [];
+  while (num >= 1) {
+    // Only change code below this line
+  newArr.push([...arr]);
+    // Only change code above this line
+    num--;
+  }
+  return newArr;
+}
+
+console.log(copyMachine([true, false, true], 2));
+
+// Combine Arrays with the Spread Operator
+/* We have defined a function spreadOut that returns the variable sentence. Modify the function using the spread operator so that it 
+  returns the array ['learning', 'to', 'code', 'is', 'fun']. */
+  function spreadOut() {
+    let fragment = ['to', 'code'];
+    let sentence = ['learning', ...fragment, 'is', 'fun']; // Change this line
+    return sentence;
+  }
+  
+  console.log(spreadOut());
+
+// Check For The Presence of an Element With indexOf()
+/*
+  indexOf() can be incredibly useful for quickly checking for the presence of an element on an array. We have defined a function, 
+  quickCheck, that takes an array and an element as arguments. Modify the function using indexOf() so that it returns true if the 
+  passed element exists on the array, and false if it does not. 
+*/
+function quickCheck(arr, elem) {
+  // Only change code below this line
+  if (arr.indexOf(elem) >= 0) {
+    return true
+  } else {
+    return false
+  }
+  // Only change code above this line
+}
+
+console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
+
+// Iterate Through All an Array's Items Using For Loops
 
 
