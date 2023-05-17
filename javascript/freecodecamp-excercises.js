@@ -2595,3 +2595,26 @@ console.log(getArrayOfUsers(users));
   }
 
   console.log(addFriend(user, 'Pete'));
+
+
+  // BASIC ALGORITHM SCRIPTING
+
+  // Convert Celsius to Fahrenheit
+  /* 
+    You are given a variable celsius representing a temperature in Celsius. Use the variable fahrenheit already defined and assign 
+    it the Fahrenheit temperature equivalent to the given Celsius temperature. Use the formula mentioned above to help convert the 
+    Celsius temperature to Fahrenheit. */
+  function convertToF(celsius) {
+    let fahrenheit = celsius * 9/5 + 32;
+    return fahrenheit;
+  }
+  console.log(convertToF(30));
+
+  // Reverse a String
+  // Reverse the provided string.
+  function reverseString(str) {
+    return str.split('').reverse().join('');
+  }
+  reverseString("hello");
+
+  // Factorialize a Number
