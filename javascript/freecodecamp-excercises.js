@@ -2618,3 +2618,25 @@ console.log(getArrayOfUsers(users));
   reverseString("hello");
 
   // Factorialize a Number
+  // Return the factorial of the provided integer.
+  function factorialize(num) {
+    let factorial = 1;
+    for (let i = 1; i <= num; i++) {
+      factorial *= i
+    }
+    return factorial;
+  }
+
+  // Find the Longest Word in a String
+  // Return the length of the longest word in the provided sentence.
+  function findLongestWordLength(str) {
+    let longest = 0;
+    let words = str.split(' ');
+    for (let i = 0; i < words.length; i++) {
+      if (words[i].length > longest) {
+        longest = words[i].length
+      }
+    }
+    return longest;
+  }
+  findLongestWordLength("The quick brown fox jumped over the lazy dog");
