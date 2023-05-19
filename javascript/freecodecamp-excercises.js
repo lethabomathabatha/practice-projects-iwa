@@ -2653,5 +2653,49 @@ console.log(getArrayOfUsers(users));
   }
   console.log(largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [-1000, -1001, -857, -1]]));
 
-  // Confirm the Ending
-  
+// // //
+
+
+// OBJECT ORIENTED PROGRAMMING
+
+// Create a Basic JavaScript Object
+// Create a dog object with name and numLegs properties, and set them to a string and a number, respectively.
+let dog = {
+  name: "Tricky",
+  numLegs: 12
+};
+
+// Use Dot Notation to Access Object Properties
+// Print both properties of the dog object to your console.
+let dog1 = {
+  name: "Spot",
+  numLegs: 4
+};
+// Only change code below this line
+console.log(dog1.name)
+console.log(dog1.numLegs)
+
+// Create a Method on an Object
+// Methods are properties that are functions. This adds different behavior to an object. 
+// Using the dog object, give it a method called sayLegs. The method should return the sentence "This dog has 4 legs."
+let dog3 = {
+  name: "Spot",
+  numLegs: 4,
+  sayLegs: function() {return "This dog has " + dog3.numLegs + " legs."}
+};
+
+dog3.sayLegs();
+
+// Make Code More Reusable with the 'this' keyword
+// Modify the dog.sayLegs method to remove any references to dog. Use the duck example for guidance.
+let dog4 = {
+  name: "Spot",
+  numLegs: 4,
+  sayLegs: function() {return "This dog has " + this.numLegs + " legs.";}
+};
+
+dog4.sayLegs();
+
+
+// Define a Constructor Function
+
